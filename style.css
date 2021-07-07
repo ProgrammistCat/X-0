@@ -81,11 +81,19 @@ body {
     margin-right: 15px;
 }
 
-.cross, .zero {
+.cross {
     background: #6f82d7;
     padding: 0 25px;
     margin: 15px 15px;
     border: #394c9c solid 5px;
+    border-radius: 20px;
+}
+
+.zero {
+    background: #6fadd7;
+    padding: 0 25px;
+    margin: 15px 15px;
+    border: #39749c solid 5px;
     border-radius: 20px;
 }
 
@@ -104,9 +112,40 @@ body {
     margin: 20px 0;
     border: #ffffff solid 5px;
     border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .square {
     display: flex;
     justify-content: center;
 }
+
+
+
+/* Area */
+.row {
+    display: flex;
+}
+
+.cell {
+    border: solid black 2px;
+    width: 145px;
+    height: 145px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+
+    user-select: none;
+}
+.cell:hover {
+    background: #8fa0ee;
+    cursor: pointer;
+}
+
+
