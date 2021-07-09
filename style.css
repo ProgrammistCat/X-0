@@ -68,7 +68,7 @@ body {
     background: #6f82d7;
     border: #394c9c solid 5px;
     border-radius: 30px;
-    padding: 20px 40px;
+    padding: 20px 70px;
     font-size: 25px;
     text-align: center;
 }
@@ -82,36 +82,36 @@ body {
 }
 
 .cross {
-    background: #6f82d7;
+    background: #91a2ef;
     padding: 0 25px;
     margin: 15px 15px;
-    border: #394c9c solid 5px;
+    border: #7286e2 solid 5px;
     border-radius: 20px;
 }
 
 .zero {
-    background: #6fadd7;
+    background: #91a2ef;
     padding: 0 25px;
     margin: 15px 15px;
-    border: #39749c solid 5px;
+    border: #7286e2 solid 5px;
     border-radius: 20px;
 }
 
 .cross h1, .zero h1 {
     font-size: 30px;
-    color: #ffffff;
+    color: #c5cee7;
     text-align: center;
     user-select: none;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 .field {
-    background: white;
+    background: #6f93d4;
     height: 450px;
     width: 450px;
     margin: 20px 0;
-    border: #ffffff solid 5px;
-    border-radius: 10px;
+    border: #6f93d4 solid 5px;
+    border-radius: 20px;
 
     display: flex;
     flex-direction: column;
@@ -124,22 +124,52 @@ body {
     justify-content: center;
 }
 
+.window {
+    width: 1600px;
+    height: 250px;
+    background: #dfe3f1;
+    border: #2c3b7b solid 7px;
+    border-radius: 20px;
+    font-size: 120px;
+    user-select: none;
+    text-align: center;
+}
+
+.window h1 {
+    font-size: 100px;
+    color: #304292;
+}
+
+.win {
+    display: flex;
+    justify-content: center;
+}
+
+.petard {
+    margin: 20px 30px;
+}
+
+
+
 
 
 /* Area */
 .row {
     display: flex;
+
 }
 
 .cell {
-    border: solid black 2px;
-    width: 145px;
-    height: 145px;
+    border: solid #c6d5f8 7px;
+    width: 120px;
+    height: 120px;
+    font-family: 'Luckiest Guy', cursive;
+    color: #ffffff;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 120px;
+    font-size: 110px;
 
     user-select: none;
 }
@@ -148,4 +178,7 @@ body {
     cursor: pointer;
 }
 
-
+.buttonsTwo {
+    display: flex;
+    justify-content: center;
+}

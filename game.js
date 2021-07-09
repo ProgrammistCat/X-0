@@ -16,28 +16,31 @@ function changePlayer() {
     if (whosePlayer === X) {
         whosePlayer = O
 
-
-
         // Установка
-        document.querySelector('.cross').style.backgroundColor = '#000'
+        document.querySelector('.cross').style.backgroundColor = '#91a2ef'
+        document.querySelector('.cross').style.borderColor = '#7286e2'
+        document.querySelector('.cross h1').style.color = '#c5cee7'
 
         // Удаление
-        document.querySelector('.zero').style.backgroundColor = '#6fadd7'
+        document.querySelector('.zero').style.backgroundColor = '#7d90e7'
+        document.querySelector('.zero').style.borderColor = '#5a6cbd'
+        document.querySelector('.zero h1').style.color = '#eceff8'
 
         return
     }
 
-
     if (whosePlayer === O) {
         whosePlayer = X
 
-
-
         // Установка
-        document.querySelector('.zero').style.backgroundColor = '#000'
+        document.querySelector('.zero').style.backgroundColor = '#91a2ef'
+        document.querySelector('.zero').style.borderColor = '#7286e2'
+        document.querySelector('.zero h1').style.color = '#c5cee7'
 
         // Удаление
-        document.querySelector('.cross').style.backgroundColor = '#6f82d7'
+        document.querySelector('.cross').style.backgroundColor = '#7d90e7'
+        document.querySelector('.cross').style.borderColor = '#5a6cbd'
+        document.querySelector('.cross h1').style.color = '#eceff8'
 
         return
     }
@@ -46,8 +49,9 @@ function changePlayer() {
 
 
 function checkWin() {
-    if (gameStatus[0][0] == X && gameStatus[1][1] == X && gameStatus[2][2] == X) {
+    if (gameStatus[0][0] === X && gameStatus[1][1] === X && gameStatus[2][2] === X) {
         console.log('X - Win')
+
     }
 }
 
@@ -87,7 +91,6 @@ for (let i = 0; i < $cells.length; i++) {
             console.error("Error: Whose Player is " + whosePlayer)
             return
         }
-
 
         checkWin()
 
