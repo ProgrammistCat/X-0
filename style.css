@@ -139,16 +139,41 @@ body {
     font-size: 100px;
     color: #304292;
 }
-
+.win-modal-window {
+    display: none;
+    user-select: none;
+}
 .win {
+    z-index: 100;
+    position: absolute;
+    top: 30%;
+    left: 0;
+
+    width: 100%;
+
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .petard {
     margin: 20px 30px;
 }
+.blur {
+    background: rgba(0, 0, 0, 0.4);
 
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.rotateX {
+    transform: rotateX(180deg);
+    transform: rotate(270deg);
+}
 
 
 
