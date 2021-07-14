@@ -46,7 +46,6 @@ function changePlayer() {
 
     if (whosePlayer === X) {
         whosePlayer = O
-        console.log(whosePlayer)
 
         // Установка
         $markerXContainer.style.backgroundColor = '#91a2ef'
@@ -63,7 +62,6 @@ function changePlayer() {
 
     if (whosePlayer === O) {
         whosePlayer = X
-        console.log(whosePlayer)
 
         // Установка
         $markerOContainer.style.backgroundColor = '#91a2ef'
@@ -80,12 +78,28 @@ function changePlayer() {
 }
 
 
+function checkTie() {
+
+    let acc = 0
+
+    for (let i = 0; i < gameStatus.length; i++) {
+        for (let j = 0; j < gameStatus[i].length; j++) {
+            if (gameStatus[i][j] !== null) {
+                acc++
+            }
+        }
+    }
+
+    return acc == 9
+}
+
 
 function checkWin() {
 
     let player = null
 
     function win(player) {
+
         if (player == X) {
             WinX()
         } else if (player == O) {
@@ -119,7 +133,10 @@ function checkWin() {
         }
     }
 
-
+    // Если все поля занято
+    if (checkTie()) {
+        Tie()
+    }
 }
 
 function WinX() {
@@ -129,6 +146,11 @@ function WinX() {
 function Win0() {
     openModalWindow('Победа за O!')
 }
+
+function Tie() {
+    openModalWindow('Ничья!')
+}
+
 
 
 
