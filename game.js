@@ -17,8 +17,8 @@ const modalBlurSelector = '.win-modal-window .blur'
 const $markerXContainer = document.querySelector(markerXContainerSelector)
 const $markerX = document.querySelector(markerXSelector)
 
-const $markerOContainer = document.querySelector(markerXContainerSelector)
-const $markerO = document.querySelector(markerXSelector)
+const $markerOContainer = document.querySelector(markerOContainerSelector)
+const $markerO = document.querySelector(markerOSelector)
 
 const $modalContainer = document.querySelector('.win-modal-window')
 const $modalMessage = document.querySelector('.win-modal-window .message')
@@ -46,6 +46,7 @@ function changePlayer() {
 
     if (whosePlayer === X) {
         whosePlayer = O
+        console.log(whosePlayer)
 
         // Установка
         $markerXContainer.style.backgroundColor = '#91a2ef'
@@ -62,6 +63,7 @@ function changePlayer() {
 
     if (whosePlayer === O) {
         whosePlayer = X
+        console.log(whosePlayer)
 
         // Установка
         $markerOContainer.style.backgroundColor = '#91a2ef'
