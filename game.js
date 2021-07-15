@@ -224,5 +224,161 @@ for (let i = 0; i < $cells.length; i++) {
 
 
 
+///////////////
+
+
+const arrTest = [
+    [1, 2, 3, 4, 5],
+    [1, 2, 3, 4, 5],
+    [1, 2, 3, 4, 5],
+    [1, 2, 3, 4, 5],
+    [1, 2, 3, 4, 5]
+]
+
+const arr0 = [
+    ['x', 'x', 'x'],
+    ['0', '0', '0'],
+    ['0', '0', '0']
+]
+
+function arr0Arif(arr) {
+
+    let sum = 0
+
+    const length = arr[0].length
+
+    for (let i = 0; i < length; i++) {
+        sum += arr[0][i]
+    }
+
+    return sum / length
+}
+
+
+const arr1 = [
+    ['x', '0', '0'],
+    ['x', '0', '0'],
+    ['x', '0', '0']
+]
+
+function arr1Arif(arr) {
+
+    let sum = 0
+
+    const length = arr.length
+
+    for (let i = 0; i < length; i++) {
+        sum += arr[i][0]
+    }
+
+    return sum / length
+}
+
+const arr2 = [
+    ['0', 'x', '0'],
+    ['0', 'x', '0'],
+    ['0', 'x', '0']
+]
+
+function arr2Arif(arr) {
+
+    let sum = 0
+
+    const length = arr.length
+
+    for (let i = 0; i < length; i++) {
+        sum += arr[i][1]
+    }
+
+    return sum / length
+}
+
+const arr3 = [
+    ['0', '0', '0'],
+    ['0', '0', '0'],
+    ['x', 'x', 'x']
+]
+
+function arr3Arif(arr) {
+
+    let sum = 0
+
+    const length = arr[2].length
+
+    for (let i = 0; i < length; i++) {
+        sum += arr[2][i]
+    }
+
+    return sum / length
+}
+
+const arr4 = [
+    ['x', '0', '0'],
+    ['0', 'x', '0'],
+    ['0', '0', 'x']
+]
+
+function arr4Arif(arr) {
+
+    let sum = 0
+
+    const length = arr.length
+
+    for (let i = 0; i < length; i++) {
+        sum += arr[i][i]
+    }
+
+    return sum / length
+}
+
+const arr5 = [
+    ['0', '0', 'x'],
+    ['0', 'x', '0'],
+    ['x', '0', '0']
+]
+
+function arr5Arif(arr) {
+
+    let sum = 0
+
+    const length = arr.length
+
+    for (let i = 0, j = 2; i < length, j >= 0; i++, j--) {
+        sum += arr[i][j]
+    }
+
+    return sum / length
+}
+
+// Ср ариф во всем двумерном массиве
+
+function allArif(arr) {
+
+    let sum = 0
+
+    for (let i = 0; i < arr.length; i++) {
+
+        for (let j = 0; j < arr[i].length; j++) {
+            sum += arr[i][j]
+        }
+
+    }
+
+    return sum / (arr[0].length * arr.length)
+}
+
+
+/*
+* 2D
+* Пиксель
+* - Adobe Photoshop
+* - Gimp
+* Векторной
+* - Corel Draw
+* - Adobe Illustrator
+*
+* 3D
+*
+* */
 
 
